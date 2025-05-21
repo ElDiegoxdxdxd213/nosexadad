@@ -90,6 +90,22 @@
         padding: 2rem 1rem;
       }
     }
+
+    .contenedor {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  .texto-arriba {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    font-weight: bold;
+  }
   </style>
 </head>
 <body>
@@ -109,12 +125,14 @@
     <h2>Galería de Proyectos</h2>
     <div class="galeria">
       
-       <title>Este es el título o pie de foto 
-      <img src="img/i.jpg" alt="Mueble de madera personalizado 1" /></title> 
-      
-      <title>Este es el título o pie de foto</title> 
+  <div class="contenedor">
+      <img src="img/i.jpg" alt="Mueble de madera personalizado 1" />
+    <div class="texto-arriba">Texto 1</div>
+</div>
+      <div class="contenedor">
       <img src="img/Goat.jpg" alt="Rótulo artesanal 2" />
-     
+         <div class="texto-arriba">Texto 1</div>
+</div>
       <img src="OIP.jpg" alt="Proyecto decorativo en madera 3" />
       <img src="taller4.jpg" alt="Diseño de mobiliario a medida 4" />
       <img src="taller5.jpg" alt="Obra artesanal 5" />
